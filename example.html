@@ -63,14 +63,28 @@
        <h1>Page header</h1> 
     </div>
     <!-- optional Page Navigation (for anchor links) -->
-    <nav class="navbar">
-        <ul class="nav navbar-nav">
-            <li><a href="#">Jump to</a></li>
-            <li><a href="#">Anchor 1</a></li>
-            <li><a href="#">Anchor 2</a></li>
-            <li><a href="#">Anchor 3</a></li>
-        </ul>    
+    <nav class="navbar navbar-static-top navbar-default">
+    	<div class="container">
+    		<div class="navbar-header">
+    			<div class="dropdown">
+        			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#page-nav" aria-expanded="false" aria-controls="navbar">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+        				Quick links:
+        			</button> 
+        		</div>
+        	</div>
+        	<div id="page-nav" class="navbar-collapse collapse" aria-expanded="false">
+        		<ul class="nav navbar-nav">
+        			<li class="hidden-xs hidden-md">Quick links:</li>
+            		<li class="active"><a href="#">Anchor 1</a></li>
+            		<li><a href="#">Anchor 2</a></li>
+           			<li><a href="#">Anchor 3</a></li>
+        		</ul>
+        	</div> 
+        </div>	  
     </nav>
+    
     
     
     
