@@ -6665,6 +6665,32 @@ body {
   padding-top: 50px;
   text-align: right;
 }
+p .img-sm {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (min-width: 480px) {
+  p .img-sm {
+    max-width: 55%;
+  }
+}
+@media (min-width: 768px) {
+  p .img-sm {
+    max-width: 50%;
+  }
+}
+p .img-lg {
+  max-width: 100%;
+  display: block;
+  margin: 15px auto;
+}
+p img.pull-left {
+  margin-right: 15px;
+}
+p img.pull-right {
+  margin-left: 15px;
+}
 .footer {
   position: absolute;
   bottom: 0;

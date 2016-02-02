@@ -28,6 +28,32 @@ body {
 	}
 }
 
+p {
+	.img-sm {
+		width: 100%;
+		margin-top: @grid-gutter-width / 2;
+		margin-bottom: @grid-gutter-width / 2;
+		
+		@media (min-width: @screen-xs) {
+			max-width: 55%;
+		}	
+		@media (min-width: @screen-sm) {
+			max-width: 50%;
+		}
+	}	
+	.img-lg {
+		max-width: 100%;
+		display: block;
+		margin: (@grid-gutter-width / 2) auto;
+	}
+	img.pull-left {
+		margin-right: @grid-gutter-width / 2;
+	}
+	img.pull-right {
+		margin-left: @grid-gutter-width / 2;
+	}
+}
+
 .footer {
   position: absolute;
   bottom: 0;
