@@ -1263,7 +1263,7 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 24px;
 }
 h3,
 .h3 {
@@ -6681,59 +6681,13 @@ h5,
 h6 {
   color: #333333;
 }
-h2 {
-  font-size: 24px;
+p {
+  font-weight: 300;
+  line-height: 1.75;
 }
-h2 small {
-  display: block;
-  letter-spacing: .1em;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  font-size: 45%;
-}
-h3 {
-  font-size: 18px;
-}
-h3.block-title {
-  text-transform: uppercase;
-  font-size: 16px;
-}
-h4 {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  font-family: 'Roboto', sans-serif;
-}
-h5 {
-  font-size: 14px;
-}
-h6 {
-  font-size: 12px;
-}
-h1.short,
-h2.short,
-h3.short,
-h4.short,
-h5.short,
-h6.short,
-p.short {
-  margin-bottom: 5px;
-}
-h1.spaced,
-h2.spaced,
-h3.spaced,
-h4.spaced,
-h5.spaced,
-h6.spaced {
-  margin-top: 22px;
-}
-h1 a,
-h2 a,
-h3 a,
-h5 a,
-h6 a {
-  color: #333333;
-  text-decoration: none;
+p.lead {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
 }
 .clearfix:before,
 .clearfix:after,
