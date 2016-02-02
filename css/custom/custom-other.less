@@ -23,6 +23,8 @@ body {
 
 .page-header {
 	background-color: @brand-secondary;
+	margin-bottom: 0;
+	border-bottom: 3px solid @brand-primary;
 	h1 {
 		padding-top: @navbar-height;
 		text-align: right;
@@ -53,6 +55,18 @@ p {
 	}
 	img.pull-right {
 		margin-left: @grid-gutter-width / 2;
+	}
+}
+
+.main {
+	h2 {
+		border-bottom: 1px solid @gray-light;	
+		.heading-content {
+			width: fit-content;
+			padding-bottom: @padding-large-vertical;
+			border-bottom: 1px solid @brand-primary;
+			margin-bottom: -1px;
+		}
 	}
 }
 
