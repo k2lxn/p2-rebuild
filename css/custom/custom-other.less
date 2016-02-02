@@ -4,8 +4,6 @@
    1. Basic Styles
 ================================================== */
 
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
@@ -14,6 +12,14 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+.page-header {
+	h1 {
+		padding-top: @navbar-height;
+		text-align: right;
+	}
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -28,7 +34,7 @@ body {
    2. Typography
 ================================================== */
 body {
-	font-family: @font-family-serif;
+	font-family: @font-family-base;
 }
 
 h1,
@@ -37,14 +43,11 @@ h3,
 h4,
 h5,
 h6{	
-	font-family: @font-family-serif;
-	font-weight:400;
-	line-height:1.5em;
 	color:@gray-base;
 }
-h1{
-	font-size:30px;
-}
+
+
+
 h2{
 	font-size:24px;
 }

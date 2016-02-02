@@ -1076,7 +1076,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #666666;
@@ -1179,7 +1179,7 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.1;
   color: inherit;
 }
@@ -1259,7 +1259,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 24px;
 }
 h2,
 .h2 {
@@ -5968,7 +5968,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Roboto Slab", serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6086,7 +6086,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Roboto Slab", serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6647,8 +6647,6 @@ button.close {
 /* ==================================================
    1. Basic Styles
 ================================================== */
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
@@ -6656,6 +6654,10 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+}
+.page-header h1 {
+  padding-top: 50px;
+  text-align: right;
 }
 .footer {
   position: absolute;
@@ -6677,13 +6679,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Slab", serif;
-  font-weight: 400;
-  line-height: 1.5em;
   color: #333333;
-}
-h1 {
-  font-size: 30px;
 }
 h2 {
   font-size: 24px;
