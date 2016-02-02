@@ -1,0 +1,202 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'less',
+1 verbose cli   '-g' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.6
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'less', null ]
+7 verbose cache add spec less
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'less',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'less',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed less@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for less
+11 info addNameTag [ 'less', 'latest' ]
+12 silly mapToRegistry name less
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/less
+16 verbose addNameTag registry:https://registry.npmjs.org/less not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/less
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 4:19:48 PM
+20 verbose request id 69bacb54b6f54e62
+21 verbose etag "4PVDGZBUF7VVPCEEPTBN5F5IV"
+22 http request GET https://registry.npmjs.org/less
+23 http 304 https://registry.npmjs.org/less
+24 verbose headers { date: 'Tue, 02 Feb 2016 00:19:48 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"4PVDGZBUF7VVPCEEPTBN5F5IV"',
+24 verbose headers   age: '299',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-lax1425-LAX',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '6',
+24 verbose headers   'x-timer': 'S1454372388.347544,VS0,VE0',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Tue, 02 Feb 2016 00:19:48 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"4PVDGZBUF7VVPCEEPTBN5F5IV"',
+25 silly get     age: '299',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-lax1425-LAX',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '6',
+25 silly get     'x-timer': 'S1454372388.347544,VS0,VE0',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/less from cache
+27 verbose get saving less to /Users/janereynolds/.npm/registry.npmjs.org/less/.cache.json
+28 silly addNameTag next cb for less with tag latest
+29 silly addNamed less@2.6.0
+30 verbose addNamed "2.6.0" is a plain semver version for less
+31 silly cache afterAdd less@2.6.0
+32 verbose afterAdd /Users/janereynolds/.npm/less/2.6.0/package/package.json not in flight; writing
+33 verbose afterAdd /Users/janereynolds/.npm/less/2.6.0/package/package.json written
+34 silly install resolved [ { name: 'less',
+34 silly install resolved     version: '2.6.0',
+34 silly install resolved     description: 'Leaner CSS',
+34 silly install resolved     homepage: 'http://lesscss.org',
+34 silly install resolved     author: { name: 'Alexis Sellier', email: 'self@cloudhead.net' },
+34 silly install resolved     contributors: [ [Object] ],
+34 silly install resolved     bugs: { url: 'https://github.com/less/less.js/issues' },
+34 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/less/less.js.git' },
+34 silly install resolved     license: 'Apache-2.0',
+34 silly install resolved     bin: { lessc: './bin/lessc' },
+34 silly install resolved     main: 'index',
+34 silly install resolved     directories: { test: './test' },
+34 silly install resolved     jam: { main: './dist/less.js' },
+34 silly install resolved     browser: './dist/less.js',
+34 silly install resolved     engines: { node: '>=0.10.0' },
+34 silly install resolved     scripts: { test: 'grunt test' },
+34 silly install resolved     optionalDependencies:
+34 silly install resolved      { errno: '^0.1.1',
+34 silly install resolved        'graceful-fs': '^3.0.5',
+34 silly install resolved        'image-size': '~0.3.5',
+34 silly install resolved        mime: '^1.2.11',
+34 silly install resolved        mkdirp: '^0.5.0',
+34 silly install resolved        promise: '^6.0.1',
+34 silly install resolved        request: '^2.51.0',
+34 silly install resolved        'source-map': '^0.4.2' },
+34 silly install resolved     devDependencies:
+34 silly install resolved      { diff: '^1.0',
+34 silly install resolved        grunt: '^0.4.5',
+34 silly install resolved        'grunt-browserify': '~3.5.0',
+34 silly install resolved        'grunt-contrib-clean': '^0.6.0',
+34 silly install resolved        'grunt-contrib-concat': '^0.5.0',
+34 silly install resolved        'grunt-contrib-connect': '^0.9.0',
+34 silly install resolved        'grunt-contrib-jasmine': '^0.8.2',
+34 silly install resolved        'grunt-contrib-jshint': '^0.11.0',
+34 silly install resolved        'grunt-contrib-uglify': '^0.8.0',
+34 silly install resolved        'grunt-jscs': '^1.6.0',
+34 silly install resolved        'grunt-saucelabs': '^8.3.2',
+34 silly install resolved        'grunt-shell': '^1.1.1',
+34 silly install resolved        'jit-grunt': '^0.9.1',
+34 silly install resolved        'time-grunt': '^1.0.0' },
+34 silly install resolved     keywords:
+34 silly install resolved      [ 'compile less',
+34 silly install resolved        'css nesting',
+34 silly install resolved        'css variable',
+34 silly install resolved        'css',
+34 silly install resolved        'gradients css',
+34 silly install resolved        'gradients css3',
+34 silly install resolved        'less compiler',
+34 silly install resolved        'less css',
+34 silly install resolved        'less mixins',
+34 silly install resolved        'less',
+34 silly install resolved        'less.js',
+34 silly install resolved        'lesscss',
+34 silly install resolved        'mixins',
+34 silly install resolved        'nested css',
+34 silly install resolved        'parser',
+34 silly install resolved        'preprocessor',
+34 silly install resolved        'bootstrap css',
+34 silly install resolved        'bootstrap less',
+34 silly install resolved        'style',
+34 silly install resolved        'styles',
+34 silly install resolved        'stylesheet',
+34 silly install resolved        'variables in css',
+34 silly install resolved        'css less' ],
+34 silly install resolved     gitHead: '633e499566a05c5cb667a2183eb1478d31e6e92c',
+34 silly install resolved     dependencies:
+34 silly install resolved      { errno: '^0.1.1',
+34 silly install resolved        'graceful-fs': '^3.0.5',
+34 silly install resolved        'image-size': '~0.3.5',
+34 silly install resolved        mime: '^1.2.11',
+34 silly install resolved        mkdirp: '^0.5.0',
+34 silly install resolved        promise: '^6.0.1',
+34 silly install resolved        request: '^2.51.0',
+34 silly install resolved        'source-map': '^0.4.2' },
+34 silly install resolved     _id: 'less@2.6.0',
+34 silly install resolved     _shasum: 'ba4cbf4ce5a208f266ef59eef2ec409ad1044966',
+34 silly install resolved     _from: 'less@latest',
+34 silly install resolved     _npmVersion: '3.6.0',
+34 silly install resolved     _nodeVersion: '5.4.1',
+34 silly install resolved     _npmUser: { name: 'matthew-dean', email: 'matthewdean.me@gmail.com' },
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: 'ba4cbf4ce5a208f266ef59eef2ec409ad1044966',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/less/-/less-2.6.0.tgz' },
+34 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/less/-/less-2.6.0.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install less@2.6.0 into /usr/local/lib
+36 info installOne less@2.6.0
+37 verbose installOne of less to /usr/local/lib not in flight; installing
+38 verbose lock using /Users/janereynolds/.npm/_locks/less-c2213c903e2e7354.lock for /usr/local/lib/node_modules/less
+39 silly install write writing less 2.6.0 to /usr/local/lib/node_modules/less
+40 verbose unbuild lib/node_modules/less
+41 silly gentlyRm /usr/local/lib/node_modules/less is being purged from base /usr/local
+42 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/less
+43 verbose tar unpack /Users/janereynolds/.npm/less/2.6.0/package.tgz
+44 verbose tar unpacking to /usr/local/lib/node_modules/less
+45 silly gentlyRm /usr/local/lib/node_modules/less is being purged
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/less
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 error tar.unpack untar error /Users/janereynolds/.npm/less/2.6.0/package.tgz
+49 verbose unlock done using /Users/janereynolds/.npm/_locks/less-c2213c903e2e7354.lock for /usr/local/lib/node_modules/less
+50 verbose fstream_path /usr/local/lib/node_modules/less
+51 verbose fstream_type Directory
+52 verbose fstream_class DirWriter
+53 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/less'
+53 verbose stack     at Error (native)
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+54 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+55 verbose cwd /Users/janereynolds/Documents/pollinator_partnership/p2-rebuild/css/custom
+56 error Darwin 15.3.0
+57 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "less" "-g"
+58 error node v4.2.6
+59 error npm  v2.14.12
+60 error path /usr/local/lib/node_modules/less
+61 error code EACCES
+62 error errno -13
+63 error syscall mkdir
+64 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/less'
+64 error     at Error (native)
+64 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/less']
+64 error   errno: -13,
+64 error   code: 'EACCES',
+64 error   syscall: 'mkdir',
+64 error   path: '/usr/local/lib/node_modules/less',
+64 error   fstream_type: 'Directory',
+64 error   fstream_path: '/usr/local/lib/node_modules/less',
+64 error   fstream_class: 'DirWriter',
+64 error   fstream_stack:
+64 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+64 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+64 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+65 error Please try running this command again as root/Administrator.
+66 verbose exit [ -13, true ]
+67 verbose unbuild lib/node_modules/less
+68 silly gentlyRm /usr/local/lib/node_modules/less is being purged from base /usr/local
+69 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/less
