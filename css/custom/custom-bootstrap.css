@@ -6655,6 +6655,12 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+@media (max-width: 768px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .page-header h1 {
   padding-top: 50px;
   text-align: right;
