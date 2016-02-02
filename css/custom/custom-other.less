@@ -59,6 +59,7 @@ p {
 }
 
 .main {
+	position: relative;
 	h2 {
 		border-bottom: 1px solid @gray-light;	
 		.heading-content {
@@ -67,6 +68,26 @@ p {
 			border-bottom: 1px solid @brand-primary;
 			margin-bottom: -1px;
 		}
+	}
+}
+
+.sidebar {
+	ul {
+		list-style: none;
+		list-style-position: outside;
+		padding-left: @padding-small-horizontal;
+	}	
+	.btn {
+		border-radius: 20px;
+		background-color: @brand-success;
+		color: @gray-lighter;
+		font-family: @font-family-sans-serif;
+		text-transform: uppercase;
+		letter-spacing: .07em;
+		font-weight: 700;
+		font-size: @font-size-small;
+		margin-bottom: @padding-large-vertical;
+		margin-top: @padding-large-vertical;
 	}
 }
 
@@ -96,6 +117,11 @@ h4,
 h5,
 h6{	
 	color:@gray-base;
+}
+
+h3 {
+	font-family: @font-family-sans-serif;
+	font-weight: 400;
 }
 
 p {

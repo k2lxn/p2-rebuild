@@ -1267,7 +1267,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 18px;
 }
 h4,
 .h4 {
@@ -2619,7 +2619,7 @@ input[type="search"] {
   .input-group-lg input[type="time"],
   .input-group-lg input[type="datetime-local"],
   .input-group-lg input[type="month"] {
-    line-height: 46px;
+    line-height: 66px;
   }
 }
 .form-group {
@@ -2736,39 +2736,39 @@ select[multiple].input-sm {
   line-height: 1.5;
 }
 .input-lg {
-  height: 46px;
-  padding: 10px 16px;
+  height: 66px;
+  padding: 20px 16px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
 }
 select.input-lg {
-  height: 46px;
-  line-height: 46px;
+  height: 66px;
+  line-height: 66px;
 }
 textarea.input-lg,
 select[multiple].input-lg {
   height: auto;
 }
 .form-group-lg .form-control {
-  height: 46px;
-  padding: 10px 16px;
+  height: 66px;
+  padding: 20px 16px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
 }
 .form-group-lg select.form-control {
-  height: 46px;
-  line-height: 46px;
+  height: 66px;
+  line-height: 66px;
 }
 .form-group-lg textarea.form-control,
 .form-group-lg select[multiple].form-control {
   height: auto;
 }
 .form-group-lg .form-control-static {
-  height: 46px;
+  height: 66px;
   min-height: 38px;
-  padding: 11px 16px;
+  padding: 21px 16px;
   font-size: 18px;
   line-height: 1.3333333;
 }
@@ -2793,9 +2793,9 @@ select[multiple].input-lg {
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 46px;
-  height: 46px;
-  line-height: 46px;
+  width: 66px;
+  height: 66px;
+  line-height: 66px;
 }
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
@@ -2984,7 +2984,7 @@ select[multiple].input-lg {
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 11px;
+    padding-top: 21px;
     font-size: 18px;
   }
 }
@@ -3427,7 +3427,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 10px 16px;
+  padding: 20px 16px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
@@ -3826,8 +3826,8 @@ tbody.collapse.in {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 46px;
-  padding: 10px 16px;
+  height: 66px;
+  padding: 20px 16px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
@@ -3835,8 +3835,8 @@ tbody.collapse.in {
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 46px;
-  line-height: 46px;
+  height: 66px;
+  line-height: 66px;
 }
 textarea.input-group-lg > .form-control,
 textarea.input-group-lg > .input-group-addon,
@@ -3902,7 +3902,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 3px;
 }
 .input-group-addon.input-lg {
-  padding: 10px 16px;
+  padding: 20px 16px;
   font-size: 18px;
   border-radius: 6px;
 }
@@ -4761,7 +4761,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 10px 16px;
+  padding: 20px 16px;
   font-size: 18px;
   line-height: 1.3333333;
 }
@@ -6697,14 +6697,34 @@ p img.pull-left {
 p img.pull-right {
   margin-left: 15px;
 }
+.main {
+  position: relative;
+}
 .main h2 {
   border-bottom: 1px solid #ddd;
 }
 .main h2 .heading-content {
   width: fit-content;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #f6bb42;
   margin-bottom: -1px;
+}
+.sidebar ul {
+  list-style: none;
+  list-style-position: outside;
+  padding-left: 10px;
+}
+.sidebar .btn {
+  border-radius: 20px;
+  background-color: #5cb85c;
+  color: #ffffff;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .footer {
   position: absolute;
@@ -6727,6 +6747,10 @@ h4,
 h5,
 h6 {
   color: #333333;
+}
+h3 {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
 }
 p {
   font-weight: 300;
