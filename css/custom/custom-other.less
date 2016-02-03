@@ -21,12 +21,17 @@ body {
   }
 }
 
+.site-header {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
 .page-header {
 	background-color: @brand-secondary;
-	margin-bottom: 0;
+	margin: 0;
 	border-bottom: 3px solid @brand-primary;
 	h1 {
-		padding-top: @navbar-height;
+		padding-top: @navbar-height * 2;
 		text-align: right;
 		color: white;
 	}
@@ -105,9 +110,14 @@ footer {
   	background-color: @gray-darker;
   	border-top: 1px solid darken(@gray-darker, 6%);
   	margin-bottom: 0;
-  	
+  
   	@media (max-width: @screen-sm) {
   		text-align: center;
+  	}
+  }
+  .nav {
+  	@media (min-width: @screen-sm) {
+  		text-align: right;
   	}
   }
   .nav ul {

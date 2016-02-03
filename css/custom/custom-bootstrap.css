@@ -6661,13 +6661,18 @@ body {
     padding-right: 30px;
   }
 }
+.site-header {
+  max-width: 980px;
+  margin: 0 auto;
+  height: auto;
+}
 .page-header {
   background-color: #ffce54;
-  margin-bottom: 0;
+  margin: 0;
   border-bottom: 3px solid #f6bb42;
 }
 .page-header h1 {
-  padding-top: 50px;
+  padding-top: 100px;
   text-align: right;
   color: white;
 }
@@ -6744,6 +6749,11 @@ footer .row:nth-of-type(2) {
 @media (max-width: 768px) {
   footer .row:nth-of-type(2) {
     text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  footer .nav {
+    text-align: right;
   }
 }
 footer .nav ul {
