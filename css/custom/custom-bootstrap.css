@@ -6664,7 +6664,6 @@ body {
 .site-header {
   max-width: 980px;
   margin: 0 auto;
-  height: auto;
 }
 .page-header {
   background-color: #ffce54;
@@ -6732,8 +6731,6 @@ p img.pull-right {
   margin-top: 20px;
 }
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 footer .row:first-of-type {
