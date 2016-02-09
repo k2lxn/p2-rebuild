@@ -1,0 +1,19 @@
+{
+  "name": "p2-rebuild",
+  "version": "1.0.0",
+  "description": "Re-designed pollinator.org",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k2lxn/p2-rebuild.git"
+  },
+  "author": "Jane Reynolds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k2lxn/p2-rebuild/issues"
+  },
+  "homepage": "https://github.com/k2lxn/p2-rebuild#readme"
+}
