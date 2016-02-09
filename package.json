@@ -1,6 +1,15 @@
 {
   "name": "p2-rebuild",
   "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jit-grunt": "^0.9.1"
+  },
   "description": "Re-designed pollinator.org",
   "main": "Gruntfile.js",
   "scripts": {
