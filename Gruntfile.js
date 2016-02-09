@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     },
     watch: {
       styles: {
-        files: ['css/custom/custom-bootstrap.less'], // which files to watch
+        files: ['css/custom/*.less'], // which files to watch
         tasks: ['less'],
         options: {
           nospawn: true
