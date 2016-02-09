@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  	<title>SSI test</title>
+  	<!--#config timefmt="%A" --> <!--#echo var="DATE_LOCAL" -->
+  </head>
+  
+<body>
+
+</body>
+</html>
+  
+  
