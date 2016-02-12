@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-	$('.main').css('padding-bottom', $('.footer').height());
+	$('.main').css('padding-bottom', $('.footer').height()); // Push content up above footer
 }); 
 
 // Move footer down when page resizes
