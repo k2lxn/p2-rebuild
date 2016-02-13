@@ -52,18 +52,28 @@ html,body {
 	}	
 	.container-fluid {
 		max-width: 980px;
+		padding: 0;
 		border-radius: 0 0 5px 5px;
-		background-color:#FFF;
-		opacity: 0.9;
+		background-color:rgba(255,255,255,0.9);
 		box-shadow: 0 1px 2px rgba(0,0,0,.1);
+		.navbar-brand {
+			height: auto;
+			padding: 10px 15px;
+			margin-left: 0;
+		}
+	}
+	#top-bar {
+		height: 37px;
+		background-color: @gray-darker;
+		@media (min-width: @screen-sm) {
+			min-width: 936px;
+			max-width: 980px;
+			margin: 0 auto;
+		}	
 	}
 	.nav {
 		margin-top: 15px;
 	} 
-}
-.navbar-brand {
-	height: auto;
-	padding: 10px 15px;
 }
 
 
