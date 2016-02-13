@@ -105,6 +105,21 @@ html,body {
 	} 
 }
 
+ul.social-links {
+	list-style: none;
+	li {
+		float: left;
+		line-height: 37px;
+		a {
+			font-size: 18px;
+			padding: 0 10px;
+			color: @gray-light;
+		}
+		a:hover {
+			color: @gray-lighter;
+		}
+	}
+}
 
 .page-header {
 	background-color: @brand-secondary;
@@ -214,7 +229,10 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
   .row:first-of-type {
   	padding: 40px 0;
   	background-image: url(../../img/wave-high_no-fade.png);
@@ -228,6 +246,10 @@ footer {
   	@media (max-width: @screen-sm) {
   		text-align: center;
   	}
+  }
+  .well {
+  	border-radius: 0;
+  	border-width: 1px 0 0;
   }
   .nav {
   	@media (min-width: @screen-sm) {
