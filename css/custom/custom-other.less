@@ -42,10 +42,30 @@ html,body {
 	}
 }
 
-.site-header {
-	max-width: 980px;
+.site-header {	
+	height: 75px;
 	margin: 0 auto;
+	background: none;
+	border-bottom: none;
+	@media (min-width: @screen-sm) {
+		min-width: 936px;
+	}	
+	.container-fluid {
+		max-width: 980px;
+		border-radius: 0 0 5px 5px;
+		background-color:#FFF;
+		opacity: 0.9;
+		box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	}
+	.nav {
+		margin-top: 15px;
+	} 
 }
+.navbar-brand {
+	height: auto;
+	padding: 10px 15px;
+}
+
 
 .page-header {
 	background-color: @brand-secondary;
@@ -216,8 +236,6 @@ h3,h4 {
 	text-transform: uppercase;
 	letter-spacing: .1em;
 }
-
-
 p {
 	font-weight: 300;
 	line-height: 1.75;
@@ -226,6 +244,19 @@ p {
 p.lead{
 	font-family: @font-family-sans-serif;
 	font-weight: 400;
+}
+
+.site-header {
+	.nav li {
+		font-family: @font-family-sans-serif;
+		letter-spacing: .07em;
+		font-size: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
+		a:hover {
+			background: none;
+		}
+	}
 }
 
 footer {
