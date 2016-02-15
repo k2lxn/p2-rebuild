@@ -77,23 +77,30 @@ html,body {
 		h4 {
 			display: inline-block;
 			margin-top: 12px;
-			padding-right: 10px;
+			padding: 0 10px;
 		}
 		.row {
 			height: 100%;
 		}
 		.col-sm-2, .col-sm-5, .col-sm-6, .col-xs-5, .col-xs-7 {
 			height: 100%;
+			position: relative;
+			padding: 0;
 		}
 		ul {
 			list-style: none;
 			height: 100%;
 			padding: 0;
-			margin: 0;
 			display: inline-block;
 			li {
 				display: inline-block;
 				height: 100%;
+			}
+		}
+		ul.call-to-action {
+			@media (max-width: @screen-sm) {
+				float: right;
+				margin-right: 15px;
 			}
 		}
 		#counter {
@@ -120,6 +127,7 @@ html,body {
 }
 
 .social-links {
+	margin: 0 20px;
 	@media (min-width: @screen-sm) {
 		float: right;
 	}
@@ -134,6 +142,13 @@ html,body {
 			color: @gray-lighter;
 		}
 	} 
+}
+
+.call-to-action {
+	li {
+		background-color: @brand-primary;
+		padding: 7px 20px;
+	}
 }
 
 ul.vert-center {
@@ -364,6 +379,21 @@ p.lead{
 	}
 }
 
+.call-to-action {
+	a {
+		font-family: @font-family-sans-serif;
+		text-transform: uppercase;
+		color: #FFF;
+		font-weight: 700;
+		font-size: 12px;
+		letter-spacing: .06em;
+	}
+	a:hover {
+		opacity: 0.75;
+		text-decoration: none;
+	}
+}
+		
 footer {
 	#copyright,li {
 		font-family: @font-family-sans-serif;
