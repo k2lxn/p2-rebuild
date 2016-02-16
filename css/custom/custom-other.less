@@ -403,6 +403,14 @@ p.lead{
 a:hover {
 	text-decoration: none;
 }
+a[href^="mailto"] {
+	text-transform: none;
+	font-size: 100%;
+	color: inherit;
+}
+a[href^="mailto"]:hover {
+	color: @brand-primary;
+}
 
 .site-header {
 	#top-bar {
