@@ -32,7 +32,6 @@ html,body {
 .nav {
 	margin-bottom: 0;
 	li a {
-		text-align: center;
 		border-bottom: 1px solid @gray-lighter;
 	}
 }
@@ -161,6 +160,50 @@ ul.vert-center {
 			position: absolute;
 			top: 50%;
 			transform: translate(0, -50%);
+		}	
+	}
+}
+
+#navbar {
+	li a {
+		@media (max-width: @screen-sm) {
+			padding-left: 30px;
+		}	
+	}
+	.dropdown-menu {
+		background-color: @brand-primary;
+		margin: 0 30px;
+		@media (min-width: @screen-sm) {
+			margin: 0;
+		}
+		padding: 0;
+		li {
+			background-color: @brand-primary;
+			border-bottom: 1px solid @brand-secondary;
+			a {
+				padding: 10px 20px;
+				border-bottom: none;
+			}
+			a:hover {
+				background-color: rgba(0,0,0, 0.1);
+			}
+		}
+		li:last-of-type {
+			border-bottom: none;
+		}
+	}
+	.dropdown-menu:before {
+		content: "";
+		display: block;
+		height: 7px;
+		width: 100%;
+		background: 
+			linear-gradient(135deg, white, white 9%, transparent 9%, transparent 100%),
+			linear-gradient(-135deg, white, white 90%, transparent 90%, transparent 100%);
+		@media (min-width: @screen-sm) {
+			background: 
+				linear-gradient(135deg, white, white 49%, transparent 49%, transparent 100%),
+				linear-gradient(-135deg, white, white 49%, transparent 49%, transparent 100%);
 		}	
 	}
 }
@@ -379,6 +422,16 @@ p.lead{
 	}
 }
 
+#navbar {
+	.dropdown-menu {
+		li a {
+			font-size: 90%;
+			color: #FFF;
+			font-weight: 700;		
+		}
+	}
+}	
+	
 .call-to-action {
 	a {
 		font-family: @font-family-sans-serif;
