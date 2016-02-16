@@ -146,7 +146,13 @@ html,body {
 .call-to-action {
 	li {
 		background-color: @brand-primary;
-		padding: 7px 20px;
+		padding: 7px 0;
+		a {
+			padding: 10px 20px;
+		}
+		a:hover {
+			background: darken(@brand-primary, 6%);
+		}
 	}
 }
 
